@@ -1,16 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mouth Out!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Ширше рота!</title>
   </head>
   <body>
-    <input type="text" id="name-box" />
-    
-    <button class="btnNext"></button>
+    <h1 class="visually-hidden">Давай зіграймо у "Ширше рота!"</h1>
+    <div class="start-page isHidden">
+      <div class="input-page">
+        <h2 class="input-names-header">Додати учасника</h2>
+        <div class="input-wrapper">
+          <input type="text" class="player-input-box" />
+          <button type="button" class="add-button">Додати</button>
+        </div>
+      </div>
+      <button type="button" class="btnAnonymous">Грати без імен</button>
+    </div>
+    <div class="play-page">
+      <div class="wrapper-pre-game">
+        <p class="ready">Коли будеш готовий, тисни!</p>
+        <button type="button" class="ready-button">Поїхали!</button>
+      </div>
+      <div class="wrapper-game isHidden">
+        <div class="head-info">
+          <p class="current-player-name">PooH</p>
+          <p class="current-player-time">3 min 24 sec</p>
+        </div>
+        <h2 class="question-header">Поясніть наступний текст:</h2>
+        <p class="js-phrase">Боровики після дощу поспіли</p>
+        <div class="buttons-wrapper">
+          <button type="button" class="btnStop">Не виходить(</button>
+          <button type="button" class="btnNextPhrase">
+            Наступне завдання!
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="results-table isHidden">
+      <h2 class="result-header">Таблиця лідерів</h2>
+      <div class="results">
+        <p class="player-name">PooH</p>
+        <p class="player-time">3 min 24 sec</p>
+      </div>
+      <div class="results">
+        <p class="player-name">Лєра</p>
+        <p class="player-time">5 min 14 sec</p>
+      </div>
+      <div class="results">
+        <p class="player-name">Коля</p>
+        <p class="player-time">5 min 22 sec</p>
+      </div>
+      <div class="results">
+        <p class="player-name">Антон</p>
+        <p class="player-time">5 min 44 sec</p>
+      </div>
+    </div>
 
-    <script src="index.js" type="module"></script>
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>

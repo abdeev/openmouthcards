@@ -1,20 +1,138 @@
-* {
-  box-sizing: border-box;
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
-  color: #212121;
-  line-height: 1.5;
+  padding: 40px;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: "Comfortaa", cursive;
+  color: blanchedalmond;
+  background-color: rgb(82, 27, 133);
 }
 
-#search-box {
+ul,
+ol {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
   font: inherit;
-  padding: 8px;
-  max-width: 320px;
-  margin-bottom: 16px;
+  cursor: pointer;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ===========start page styles============ */
+.start-page {
+  padding: 50px;
+}
+.input-names-header {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+.input-wrapper {
+  margin-bottom: 50px;
+}
+.player-input-box {
+  width: calc(100% - 150px);
+  cursor: text;
+}
+.add-button {
+  margin-left: 15px;
+}
+/* ===========play page styles============ */
+.wrapper-pre-game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.ready {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.head-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 900;
+}
+.question-header {
+  margin-bottom: 30px;
+  color: rgba(134, 134, 134, 0.6);
+}
+.js-phrase {
+  padding: 8px 15px;
+  text-align: center;
+  margin-bottom: 30px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+/* ===========results page styles============ */
+.result-header {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 900;
+}
+.results {
+  display: flex;
+  justify-content: space-between;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.isHidden {
+  display: none;
 }
